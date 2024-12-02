@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:pa="http://www.univ-grenoble-alpes.fr/l3miage/medical"
+        targetNamespace="http://www.univ-grenoble-alpes.fr/l3miage/medical"
+>
+        <!-- xlmns="http://www.univ-grenoble-alpes.fr/l3miage/medical"> --> 
+    
+    <!-- Type Patient -->
+        <!--le type Patient contient une date, adresse -->
+        <element name="patient" type="pa:Patient"/>
+        
+        <complexType name="Patient">
+                <sequence>
+                        <element name="nom" type="pa:Denomination"/>
+                        <element name="prenom" type="pa:Denomination"/>
+                        <element name="sexe" type="pa:Sexe"/>
+                        <element name="naissance" type="date"/>
+                </sequence>
+        </complexType>
+        
+        <!-- type Denomination -->
+        <simpleType name="Denomination">
+                <restriction base="string">
+                        <pattern value="[A-Z][a-z]*"/>
+                </restriction>
+        </simpleType>
+
+        <!-- type Sexe -->
+        <simpleType name="Sexe">
+                <restriction base="string">
+                        <enumeration value="F"/>
+                        <enumeration value="M"/>
+                </restriction>
+        </simpleType>
+        
+    
+</schema>

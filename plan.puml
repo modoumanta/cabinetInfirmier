@@ -1,0 +1,49 @@
+<!--- schema uml --->
+
+@startuml
+class cabinet{
+    nom:String
+}
+
+class adresse{
+    etage:int
+    numero:Telephone
+    rue:int
+    codePostal:int 
+    ville:String
+}
+class patient{
+    nom:Denomination
+    prenom:Denomination
+    sexe:Sexe
+    naissance:date
+    numero:Numero
+}
+class infirmiers{
+    infirmier:Infirmier
+}
+class infirmier{
+    id:int
+    nom:Denomination
+    prenom:Denomination
+    photo:file
+}
+class visite{
+    date:date
+    intervenant:int
+}
+class acte{
+id:Ngap /'ca correspond au code NGAP'/
+}
+
+cabinet <-- adresse
+cabinet <-- infirmiers
+infirmiers <-- infirmier
+cabinet <-- patient
+patient <--visite
+visite <-- acte
+patient <-- adresse
+
+
+
+@enduml

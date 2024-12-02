@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cabinet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+         nom="Soins a Grenoble"
+         xmlns="http://www.univ-grenoble-alpes.fr/l3miage/medical/cabinet">
+  <adresse>
+    <numero>2</numero>
+    <rue>avenue des jeux olympiques</rue>
+    <codePostal>38100</codePostal>
+    <ville>Grenonle</ville>
+    <etage>2</etage>
+  </adresse>
+  <infirmiers>
+    <infirmier id="001">
+      <nom>GUEYE</nom>
+      <prenom>Ahmadou </prenom>
+      <photo>uhjdh.jpg</photo>
+    </infirmier>
+    <infirmier id="002">
+      <nom>loli</nom>
+      <prenom>lola</prenom>
+      <photo>fgfhgk.jkhk</photo>
+    </infirmier>
+    <infirmier id="004">
+      <nom>Dupont</nom>
+      <prenom>Marie</prenom>
+      <photo>photo_marie.jpg</photo>
+    </infirmier>
+    <infirmier id="003">
+      <nom>Dupont</nom>
+      <prenom>Marie</prenom>
+      <photo>photo_marie.jpg</photo>
+    </infirmier>
+  </infirmiers>
+  <patients>
+    <patient>
+      <nom>Elaouad</nom>
+      <prenom>Zineb</prenom>
+      <sexe>F</sexe>
+      <numeroSecu>102109934128516</numeroSecu>
+      <naissance>2023-09-03</naissance>
+      <adresse>
+        <numero>2</numero>
+        <rue>avenue des jeux olympiques</rue>
+        <codePostal>38100</codePostal>
+        <ville>Grenonle</ville>
+        <etage>2</etage>
+      </adresse>
+      <visite acte="103">
+        <date>2024-09-26</date>
+        <intervenant id="2" />
+      </visite>
+      <visite acte="103">
+        <date>2024-10-26</date>
+        <intervenant id="2" />
+      </visite>
+    </patient>
+    <patient>
+      <nom>nadjidatie</nom>
+      <prenom>houssouny</prenom>
+      <sexe>F</sexe>
+      <numeroSecu>299011234567890</numeroSecu>
+      <naissance>2023-09-03</naissance>
+      <adresse>
+        <numero>2</numero>
+        <rue>avenue des jeux olympiques</rue>
+        <codePostal>38100</codePostal>
+        <ville>Grenonle</ville>
+        <etage>2</etage>
+      </adresse>
+      <visite acte="103">
+        <date>2024-09-26</date>
+        <intervenant id="2" />
+      </visite>
+    </patient>
+  </patients>
+</cabinet>

@@ -1,0 +1,22 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="cabinet.xslt" type="XSLT" factoryName="XSLT">
+    <option name="myOutputFile" value="C:\Users\utilisateur\OneDrive\Documents\L3MIAGE\XML\CabinetInfirmier\Data\html\cabinet.html" />
+    <option name="myOpenOutputFile" value="true" />
+    <option name="myOpenInBrowser" value="true" />
+    <option name="mySmartErrorHandling" value="true" />
+    <option name="myRunnerPort" value="34873" />
+    <option name="myVmArguments" value="" />
+    <option name="myWorkingDirectory" value="" />
+    <option name="myModule" />
+    <option name="myJdk" />
+    <XsltFile url="file://$PROJECT_DIR$/Data/xslt/cabinet.xslt" />
+    <XmlFile url="file://$PROJECT_DIR$/Data/xml/cabinet.xml" />
+    <parameters>
+      <param name="Param1" />
+    </parameters>
+    <OutputType value="STDOUT" save-to-file="true" />
+    <FileType name="HTML" />
+    <JdkChoice value="FROM_MODULE" />
+    <method v="2" />
+  </configuration>
+</component>

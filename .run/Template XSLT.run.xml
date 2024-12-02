@@ -1,0 +1,24 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="true" type="XSLT" factoryName="XSLT">
+    <option name="myOutputFile" value="cabinet.html" />
+    <option name="myOpenOutputFile" value="true" />
+    <option name="myOpenInBrowser" value="true" />
+    <option name="mySmartErrorHandling" value="true" />
+    <option name="myRunnerPort" value="34873" />
+    <option name="myVmArguments" value="" />
+    <option name="myWorkingDirectory" value="" />
+    <option name="myModule" />
+    <option name="myJdk" />
+    <XsltFile url="file://$PROJECT_DIR$/Data/xslt/cabinet.xslt" />
+    <XmlFile url="file://$PROJECT_DIR$/Data/xml/cabinet.xml" />
+    <parameters>
+      <param name="Param1" />
+    </parameters>
+    <OutputType value="CONSOLE" save-to-file="true" />
+    <FileType name="HTML" />
+    <JdkChoice value="FROM_MODULE" />
+    <method v="2">
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="cabinet.xsl" run_configuration_type="XSLT" />
+    </method>
+  </configuration>
+</component>
