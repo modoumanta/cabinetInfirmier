@@ -1,49 +1,117 @@
 <html lang="fr" xmlns:ca="http://www.univ-grenoble-alpes.fr/l3miage/medical/cabinet">
     <head>
         <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cabinet M&eacute;dical</title>
+        <title>Planning des Soins - Cabinet M&eacute;dical</title>
         <style>
-					/* Ajouter un style de base pour la mise en forme */
-					body { font-family: Arial, sans-serif; }
-					h1 { color: #004080; }
-					ul { list-style-type: none; padding: 0; }
-					li { margin: 5px 0; }
-					.menu { background-color: #cce6ff; padding: 10px; }
-					.menu a { text-decoration: none; color: #004080; font-weight: bold; }
+					body {
+					font-family: 'Segoe UI', Arial, sans-serif;
+					background-color: #E3F2FD;
+					margin: 0;
+					color: #333;
+					}
+					.header {
+					background-color: #0D47A1;
+					color: #ffffff;
+					text-align: center;
+					padding: 20px;
+					font-size: 24px;
+					font-weight: bold;
+					}
+					.container {
+					background: #ffffff;
+					border-radius: 10px;
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+					margin: 30px auto;
+					padding: 25px;
+					max-width: 900px;
+					}
+					.patient-info {
+					background-color: #E3F2FD;
+					padding: 15px;
+					margin-bottom: 20px;
+					border-radius: 8px;
+					box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+					}
+					.section-title {
+					font-size: 20px;
+					color: #0D47A1;
+					font-weight: bold;
+					margin-bottom: 10px;
+					}
+					.info-row {
+					display: flex;
+					justify-content: space-between;
+					padding: 5px 0;
+					}
+					.info-label {
+					font-weight: bold;
+					color: #0D47A1;
+					}
+					.highlight {
+					font-weight: bold;
+					color: #0D47A1;
+					}
 				</style>
     </head>
     <body>
-        <h1>Bonjour lola,</h1>
-        <p>Aujourd'hui, vous avez 3 patients.</p>
-        <p>1 patient:</p>
-        <br>
-        <p>Nom: Elaouad</p>
-        <p>Prenom: Zineb</p>
-        <p>Zineb est nee le 2023-09-03</p>
-        <p>Adresse: 
-                2
-                avenue des jeux olympiques
-                38100
-                Grenonle
-                2
+        <div class="header">
+					Planning des Soins
+				</div>
+        <div class="container">
+            <p>
+                <strong>Bonjour lola,</strong>
             </p>
-        <p>Visite: la visite devra avoir lieu le  pour 
-                Pr&eacute;l&egrave;vement par ponction veineuse directe
-            </p>
-        <p>1 patient:</p>
-        <br>
-        <p>Nom: nadjidatie</p>
-        <p>Prenom: houssouny</p>
-        <p>houssouny est nee le 2023-09-03</p>
-        <p>Adresse: 
-                2
-                avenue des jeux olympiques
-                38100
-                Grenonle
-                2
-            </p>
-        <p>Visite: la visite devra avoir lieu le  pour 
-                Pr&eacute;l&egrave;vement par ponction veineuse directe
-            </p>
+            <p>Vous avez les patients suivants pour aujourd'hui :</p>
+            <div class="patient-info">
+                <div class="section-title">D&eacute;tails du Patient</div>
+                <div class="info-row">
+                    <span class="info-label">Nom :</span><span class="highlight">Elaouad</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Pr&eacute;nom :</span><span class="highlight">Zineb</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Date de naissance :</span><span>2023-09-03</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Adresse :</span><span>2 avenue des jeux olympiques, 38100, Grenonle</span>
+                </div>
+                <div class="section-title">Visite</div>
+                <div class="info-row">
+                    <span class="info-label">Date :</span><span class="highlight">2024-09-26</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Acte m&eacute;dical :</span><span class="highlight">
+        Pr&eacute;l&egrave;vement aseptique cutan&eacute; ou de s&eacute;cr&eacute;tions muqueuses, pr&eacute;l&egrave;vement
+        de selles ou d'urine pour examens cytologiques, bact&eacute;riologiques, mycologiques.
+      </span>
+                </div>
+            </div>
+            <div class="patient-info">
+                <div class="section-title">D&eacute;tails du Patient</div>
+                <div class="info-row">
+                    <span class="info-label">Nom :</span><span class="highlight">nadjidatie</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Pr&eacute;nom :</span><span class="highlight">houssouny</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Date de naissance :</span><span>2023-09-03</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Adresse :</span><span>2 avenue des jeux olympiques, 38100, Grenonle</span>
+                </div>
+                <div class="section-title">Visite</div>
+                <div class="info-row">
+                    <span class="info-label">Date :</span><span class="highlight">2024-09-26</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Acte m&eacute;dical :</span><span class="highlight">
+        Pr&eacute;l&egrave;vement aseptique cutan&eacute; ou de s&eacute;cr&eacute;tions muqueuses, pr&eacute;l&egrave;vement
+        de selles ou d'urine pour examens cytologiques, bact&eacute;riologiques, mycologiques.
+      </span>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

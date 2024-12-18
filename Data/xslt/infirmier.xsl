@@ -82,7 +82,7 @@
 				<p>Adresse: <xsl:value-of select="ca:adresse" /></p>
 				
 				<xsl:if test="//ca:cabinet/ca:acte/ca:actes/ca:acte/@id=ca:visite/@acte">
-					<p>Visite: la visite devra avoir lieu le <xsl:value-of select="ca:visite/@date" /> pour <xsl:value-of select="//ca:cabinet/ca:acte/ca:actes/ca:acte" /></p>
+					<p>Visite: la visite devra avoir lieu le <xsl:value-of select="ca:visite/ca:date" /> pour <xsl:value-of select="//ca:cabinet/ca:acte/ca:actes/ca:acte" /></p>
 				</xsl:if>
 				
 				<xsl:element name="button">

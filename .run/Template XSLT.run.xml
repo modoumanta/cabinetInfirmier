@@ -9,7 +9,7 @@
     <option name="myWorkingDirectory" value="" />
     <option name="myModule" />
     <option name="myJdk" />
-    <XsltFile url="file://$PROJECT_DIR$/Data/xslt/cabinet.xslt" />
+    <XsltFile url="file://$PROJECT_DIR$/Data/xslt/cabinet.xsl" />
     <XmlFile url="file://$PROJECT_DIR$/Data/xml/cabinet.xml" />
     <parameters>
       <param name="Param1" />

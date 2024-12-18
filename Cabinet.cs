@@ -81,7 +81,7 @@ namespace CabinetMedical
         public string NumeroSecu { get; set; }
 
         [XmlElement("naissance")]
-        public string Naissance { get; set; }
+        public DateTime Naissance { get; set; }
 
         [XmlElement("adresse")]
         public Adresse Adresse { get; set; }

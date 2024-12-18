@@ -7,4 +7,17 @@
     <prenom>Zineb</prenom>
     <sexe>F</sexe>
     <naissance>2003/03/09</naissance>
+    <adresse>
+        <rue>123 rue des Fleurs</rue>
+        <ville>Grenoble</ville>
+        <codePostal>38000</codePostal>
+    </adresse>
+    <visites>
+        <visite>
+            <date>2024-01-01</date>
+            <acte>Prise de sang</acte>
+            <infirmier>Dupont Marie</infirmier>
+        </visite>
+    </visites>
+
 </Patient>

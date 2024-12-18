@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<cabinet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-         nom="Soins a Grenoble"
-         xmlns="http://www.univ-grenoble-alpes.fr/l3miage/medical/cabinet">
+
+<cabinet nom="Soins a Grenoble"
+         xmlns="http://www.univ-grenoble-alpes.fr/l3miage/medical/cabinet"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.univ-grenoble-alpes.fr/l3miage/medical/cabinet ../xsd/cabinet.xsd">
   <adresse>
     <numero>2</numero>
     <rue>avenue des jeux olympiques</rue>
@@ -9,26 +11,17 @@
     <ville>Grenonle</ville>
     <etage>2</etage>
   </adresse>
+
   <infirmiers>
     <infirmier id="001">
       <nom>GUEYE</nom>
       <prenom>Ahmadou </prenom>
-      <photo>uhjdh.jpg</photo>
+      <photo>xml/4289d7fc-9d51-44d9-96d0-b9a87f51e7bb.avif</photo>
     </infirmier>
     <infirmier id="002">
       <nom>loli</nom>
       <prenom>lola</prenom>
-      <photo>fgfhgk.jkhk</photo>
-    </infirmier>
-    <infirmier id="004">
-      <nom>Dupont</nom>
-      <prenom>Marie</prenom>
-      <photo>photo_marie.jpg</photo>
-    </infirmier>
-    <infirmier id="003">
-      <nom>Dupont</nom>
-      <prenom>Marie</prenom>
-      <photo>photo_marie.jpg</photo>
+      <photo>xml/beautiful-nurse-uniform-hospital-generative-ai-illustration_118086-7313.avif</photo>
     </infirmier>
   </infirmiers>
   <patients>
@@ -36,7 +29,7 @@
       <nom>Elaouad</nom>
       <prenom>Zineb</prenom>
       <sexe>F</sexe>
-      <numeroSecu>102109934128516</numeroSecu>
+      <numeroSecu>212345678901234</numeroSecu>
       <naissance>2023-09-03</naissance>
       <adresse>
         <numero>2</numero>
@@ -45,14 +38,11 @@
         <ville>Grenonle</ville>
         <etage>2</etage>
       </adresse>
-      <visite acte="103">
+      <visite acte="103" >
         <date>2024-09-26</date>
-        <intervenant id="2" />
+        <intervenant id="002"/>
       </visite>
-      <visite acte="103">
-        <date>2024-10-26</date>
-        <intervenant id="2" />
-      </visite>
+
     </patient>
     <patient>
       <nom>nadjidatie</nom>
@@ -67,10 +57,119 @@
         <ville>Grenonle</ville>
         <etage>2</etage>
       </adresse>
-      <visite acte="103">
+      <visite acte="103" >
         <date>2024-09-26</date>
-        <intervenant id="2" />
+        <intervenant id="002"/>
       </visite>
     </patient>
+
   </patients>
+
+
+  <acte>
+    <types>
+      <type id="pi">prélèvements et injections</type>
+      <type id="pc">pansements courants</type>
+      <type id="pl">
+        pansements lourds et complexes nécessitant des conditions
+        d'asepsie rigoureuse
+      </type>
+      <type id="sd">
+        Soins infirmiers à domicile pour un patient, quel que
+        soit son âge, en situation de dépendance temporaire ou permanente.
+      </type>
+    </types>
+    <actes>
+      <acte id="101" type="pi" clé="AMI" coef="1.5">
+        Prélèvement par ponction veineuse directe
+      </acte>
+      <acte id="102" type="pi" clé="AMI" coef="5">
+        Saignée
+      </acte>
+      <acte id="103" type="pi" clé="AMI" coef="1">
+        Prélèvement aseptique cutané ou de sécrétions muqueuses, prélèvement
+        de selles ou d'urine pour examens cytologiques, bactériologiques, mycologiques.
+      </acte>
+      <acte id="104" type="pi" clé="AMI" coef="2">
+        Injection intraveineuse directe isolée.
+      </acte>
+      <acte id="105" type="pi" clé="AMI" coef="1.5">
+        Injection intraveineuse directe en série.
+      </acte>
+      <acte id="106" type="pi" clé="AMI" coef="2">
+        Injection intraveineuse directe chez un enfant de moins de 5 ans.
+      </acte>
+      <acte id="107" type="pi" clé="AMI" coef="1">
+        Injection intramusculaire.
+      </acte>
+      <acte id="108" type="pi" clé="AMI" coef="5">
+        Injection d'un sérum d'origine humaine ou animale selon la méthode de
+        Besredka, y compris la surveillance.
+      </acte>
+      <acte id="109" type="pi" clé="AMI" coef="1">
+        Injection sous-cutanée.
+      </acte>
+      <acte id="110" type="pi" clé="AMI" coef="1">
+        Injection intradermique.
+      </acte>
+      <acte id="111" type="pi" clé="AMI" coef="3">
+        Injection d'un ou plusieurs allergènes, poursuivant un traitement
+        d'hyposensibilisation spécifique, selon le protocole écrit, y compris la
+        surveillance, la tenue du dossier de soins, la transmission des informations
+        au médecin prescripteur.
+      </acte>
+      <acte id="112" type="pi" clé="AMI" coef="2.5">
+        Injection d'un implant sous-cutané.
+      </acte>
+      <acte id="113" type="pi" clé="AMI" coef="2">
+        Injection en goutte à goutte par voie rectale.
+      </acte>
+
+      <acte id="200" type="pc" clé="AMI" coef="2">
+        Pansement de stomie
+      </acte>
+      <acte id="201" type="pc" clé="AMI" coef="2.25">
+        Pansement de trachéotomie, y compris l'aspiration et l'éventuel
+        changement de canule.
+      </acte>
+      <acte id="202" type="pc" clé="AMI" coef="2">
+        Ablation de fils ou d'agrafes, dix ou moins, y compris le pansement
+        éventuel.
+      </acte>
+      <acte id="203" type="pc" clé="AMI" coef="4.1">
+        Ablation de fils ou d'agrafes, plus de dix, y compris le pansement
+        éventuel.
+      </acte>
+      <acte id="204" type="pc" clé="AMI" coef="2">
+        Autre pansement.
+      </acte>
+
+      <acte id="300" type="pl" clé="AMI" coef="4.1">
+        Pansement de brûlure étendue ou de plaie chimique ou thermique étendue,
+        sur une surface supérieure à 5% de la surface corporelle.
+      </acte>
+      <acte id="301" type="pl" clé="AMI" coef="4.1">
+        Pansement d'ulcère étendu ou de greffe cutanée, sur une surface
+        supérieure à 60 cm².
+      </acte>
+      <acte id="302" type="pl" clé="AMI" coef="4.1">
+        Pansement de fistule digestive.
+      </acte>
+      <acte id="303" type="pl" clé="AMI" coef="4.1">
+        Pansement chirurgical nécessitant un méchage ou une irrigation.
+      </acte>
+
+      <acte id="401" type="sd" clé="DI" coef="1.5">
+        Élaboration de la démarche de soins infirmiers à domicile, planification
+        des soins et rédaction du résumé de la démarche de soins infirmiers.
+      </acte>
+      <acte id="402" type="sd" clé="AIS" coef="3">
+        Mise en œuvre d'un programme d'aide personnalisée.
+      </acte>
+      <acte id="403" type="sd" clé="AIS" coef="4.1">
+        Séance hebdomadaire de surveillance clinique infirmière et de prévention
+        par séance d'une demi-heure.
+      </acte>
+    </actes>
+  </acte>
 </cabinet>
